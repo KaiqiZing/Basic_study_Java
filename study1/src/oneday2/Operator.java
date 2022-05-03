@@ -52,12 +52,11 @@ public class Operator {
         System.out.println(!false);//true
 
         // 三元运算符： 数据类型 变量名 = 布尔类型表达式 结果1：结果2
-        // 布尔类型表达式结果为TRUE，三元运算符结果为2，赋值为变量；反之结果为1，赋值给变量
+        // 布尔类型表达式结果为False，三元运算符结果为2，赋值为变量；反之结果为1，赋值给变量
         int j = (1==2 ? 100 : 200);
         System.out.println(j);
         int k = (3<=4 ? 500 : 600);
         System.out.println(k);
-
     }
 
 }
