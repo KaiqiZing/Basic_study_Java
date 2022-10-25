@@ -4,6 +4,9 @@ package oneday2;
 Java数据类型转换分为：
 自动转换--将小范围的类型，自动提升为大的类型；转换规则：byte,short,char -->int-->long-->float-->double
 强制转换--大类型强制转换为小类型；
+注意：
+浮点转成整数，直接取消小数点，可能造成数据损失精度。
+int 强制转成 short 砍掉2个字节，可能造成数据丢失。
  */
 public class AutoTransferType {
     public static void main(String[] args) {
@@ -12,7 +15,11 @@ public class AutoTransferType {
         int i = 1;
         byte b = 2;
         int j = i + b;
-        System.out.println(j);
+        System.out.println("int, byte转换为int类型："+j);
+
+        double d = 2.5;
+        double e = d +i;
+        System.out.println("double + int transfer to double:"+ e);
 
         //强制转换: 数据类型 变量名 = （数据类型）被转数据值
         //short类型变量，内存中2个字节
@@ -21,6 +28,9 @@ public class AutoTransferType {
         //s = s + 1;//编译失败
         s = (short)(s+1);//编译成功
         System.out.println(s);
+        short s1 = 1234;
+        s1 = (short)(s1 + 10);
+        System.out.println(s1);
 
     }
 

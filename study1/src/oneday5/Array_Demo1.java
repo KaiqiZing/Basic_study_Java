@@ -9,12 +9,12 @@ Notice:数组有定长特性，长度一旦指定后不可更改；
  */
 public class Array_Demo1 {
     public static void main(String[] args) {
-//        格式1，索引获取数组数据
+//        格式1，索引获取数组数据，格式2：数据类型[] 数组名 = 数据类型[]{元素1，元素2，元素3...};
         int[] arr  = new int[]{1,3,4,5};
         System.out.println("length获取数组长度：" + arr.length);
         System.out.println(arr[0]);
 
-//        变量指向一个数组
+//        变量指向一个数组，格式1：数据存储的数据类型[] 数组名 = new 数组存储的数据类型[长度];
         int[] arr1 = new int[2];
         arr1[0]= 1;
         arr1[1]= 3;
@@ -24,7 +24,7 @@ public class Array_Demo1 {
         System.out.println(arr1[1]);
 
 
-//        数组越界异常
+//        数组越界异常；格式3：数据类型[] 数组名 = {元素1，元素2，元素3...};
         int[] arr3 = {1,2,3};
 //        System.out.println(arr3[3]); // ArrayIndexOutOfBoundsException
 
