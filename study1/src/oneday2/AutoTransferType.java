@@ -32,6 +32,28 @@ public class AutoTransferType {
         s1 = (short)(s1 + 10);
         System.out.println(s1);
 
+        /*
+              1.如果没有超过左侧的范围，编译器补上强制转换
+              2.如果右侧超过了左侧的范围，那么编译器会报错；
+        */
+        byte num1 = 30; //取值范围没有超过byte的-128到128
+        //byte num2 = 128; //取值范围超过 byte的-128到128
+        System.out.println(num1);
+        // System.out.println(num2);
+
+
+        /*
+        * 常量和变量的运算：
+        * */
+
+        short result = 5+8;
+        System.out.println("常量的计算："+ result);
+
+        short num10 = 1;
+        short num11 = 2;
+        // short num13 = num10 + num11;
+
+
     }
 
 }

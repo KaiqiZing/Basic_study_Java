@@ -1,0 +1,38 @@
+1.Flow_Control_Statements
+2.Select_Statement
+    1. switch(表达式) {
+        case 常量值1:
+            语句体1;
+            break;
+        case 常量值2:
+            语句体2;
+            break;
+        ...
+        default:
+            语句体n+1;
+            break;
+    }
+    2. switch 语句中，表达式数据类型，可以是byte, short, int, char, enum
+    3. case 穿透性：如果case后面不写break，会出现穿透现象，也就是不会再判断下一个case的值，直接向后运行，直到遇到break，或者整体switch 结束；
+
+3.循环语句--Loop_Statements
+
+    1.for 循环语句格式：
+    for(初始化表达式①; 布尔表达式②; 步进表达式④){
+    循环体③
+    }
+
+    2.while循环语句格式：
+    初始化表达式①
+        while(布尔表达式②){
+            循环体③
+            步进表达式④
+            }
+
+
+    3.do...while循环语句
+    初始化表达式①
+        do{
+            循环体③
+            步进表达式④
+        }while(布尔表达式②);

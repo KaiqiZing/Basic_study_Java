@@ -1,25 +1,6 @@
 package oneday3;
-/*
-循环语句
- for(初始化表达式1; 布尔表达式2; 步进表达式4){ 循环体3
-}
-while 循环
-初始化表达式1
-while(布尔表达式2){
-    循环体3
-    步进表达式4
-    }
 
-do... while
-初始化表达式1
-    do{
-    循环体3
-    步进表达式4 }while(布尔表达式2);
-
-Notice: for and while--for loop 结束后就不能再被访问到，既变量就从内存中消失；而while循环结束后还可以继续使用
-*/
-
-public class Loop_Statments {
+public class Loop_Statements {
     public static void main(String[] args) {
 //        for loop 计算1-100之间的偶数和
         int sum = 0;
@@ -53,6 +34,13 @@ public class Loop_Statments {
         }while (x<=5);
 
 
+        int result_num = 0 ;
+        for (int k = 1; k <=100; k++) {
+            if (k % 2 == 1){
+                result_num += k;
+            }
+        }
+        System.out.println(result_num);
 
 
 

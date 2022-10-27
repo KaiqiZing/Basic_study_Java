@@ -16,25 +16,33 @@ public class Flow_Control_Statements {
         // 定义两个变量
         int a = 10;
         int b = 20;
+        int c = 10;
+
         if(a==b){
             System.out.println("a and b is equal");
         }
-        int c = 10;
         if (a==c){
             System.out.println("a and c is equal");
         }
         System.out.println("---结束if语句---");
         System.out.println();
 
+        c = a < b ? a:b;
+        System.out.println("三元运算符："+ c);
+
+
+
 //        if else语句
         System.out.println("---开始if...else语句---");
-        if (a % 2 == 0){
+        if (a % 2 == 1){
             System.out.println("a是偶数");
         }else{
             System.out.println("a是奇数");
         }
         System.out.println("---结束if...else语句---");
         System.out.println();
+
+
 //        if...else if ...else
         int x = 5;
         int y;
@@ -47,6 +55,8 @@ public class Flow_Control_Statements {
         }
         System.out.println("y值是："+y);
         System.out.println();
+
+
         int score = 50;
         if (score<0 || score>100){
             System.out.println("your score is error!");
@@ -61,6 +71,8 @@ public class Flow_Control_Statements {
         }else{
             System.out.println("your score is fail");
         }
+
+
 
     }
 
