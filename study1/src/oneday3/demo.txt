@@ -36,3 +36,10 @@
             循环体③
             步进表达式④
         }while(布尔表达式②);
+
+    for and while 区别
+        for循环在循环结束后就不能在被访问，
+        while循环结束还可以继续使用；
+
+4.跳出语句
+    break and continue

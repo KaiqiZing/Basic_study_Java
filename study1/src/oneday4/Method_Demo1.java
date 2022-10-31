@@ -1,13 +1,5 @@
 package oneday4;
-/*
- 修饰符 返回值类型 方法名(参数列表){
-    //代码省略...
-    return 结果;
- }
-定义方法的两个明确
-1.明确返回值类型--返回值类型必须要和return语句的返回类型相同，return意味着方法的结束，所有后面的代码不会执行
-2.明确参数列表
- */
+
 public class Method_Demo1 {
     public static void main(String[] args) {
 //        明确返回值类型是int

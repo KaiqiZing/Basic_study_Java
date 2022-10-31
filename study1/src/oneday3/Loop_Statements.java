@@ -43,6 +43,17 @@ public class Loop_Statements {
         System.out.println(result_num);
 
 
+        //嵌套循环
+
+        for (int y= 0; y < 5 ; y++) {
+            for (int z = 0; z < 2; z++) {
+                System.out.println("内循环*");
+            }
+            System.out.println("内循环换行标识");
+
+
+        }
+
 
 
 
