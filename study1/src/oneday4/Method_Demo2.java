@@ -23,7 +23,7 @@ public class Method_Demo2 {
 
     // 有返回值
     public static int getsum(int a, int b){
-        int result = a+b;
+        int result = a + b;
         return result;
     }
     // 无返回值,其中void代表返回值类型为空。
