@@ -51,7 +51,7 @@ public class AutoTransferType {
 
         short num10 = 1;
         short num11 = 2;
-        // short num13 = num10 + num11;
+        // short num13 = num10 + num11;  //变量值是变化的故编译器是无法识别导致编译失败；
 
 
     }
