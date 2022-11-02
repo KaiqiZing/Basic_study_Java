@@ -52,11 +52,4 @@ public class Method_Practice1 {
         }
     }
 
-
-
-
-
-
-
-
 }
