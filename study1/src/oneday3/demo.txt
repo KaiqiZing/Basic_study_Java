@@ -14,7 +14,6 @@
     }
     2. switch 语句中，表达式数据类型，可以是byte, short, int, char, enum
     3. case 穿透性：如果case后面不写break，会出现穿透现象，也就是不会再判断下一个case的值，直接向后运行，直到遇到break，或者整体switch 结束；
-
 3.循环语句--Loop_Statements
 
     1.for 循环语句格式：
