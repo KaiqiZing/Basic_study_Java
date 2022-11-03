@@ -21,22 +21,22 @@ public class Method_Demo3 {
         System.out.println(compare(g, h));
     }
     public static boolean compare(byte a, byte b){
-        System.out.println("byte");
+        System.out.println("====byte=====");
         return a ==b;
     }
 
     public static boolean compare(short a, short b){
-        System.out.println("short");
+        System.out.println("====short====");
         return a ==b;
     }
 
     public static boolean compare(long a, long b){
-        System.out.println("long");
+        System.out.println("====long====");
         return a ==b;
     }
 
     public static boolean compare(int a, int b){
-        System.out.println("int");
+        System.out.println("====int====");
         return a ==b;
     }
 }
