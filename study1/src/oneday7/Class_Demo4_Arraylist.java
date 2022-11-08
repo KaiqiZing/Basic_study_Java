@@ -1,19 +1,20 @@
 package oneday7;
 import java.util.ArrayList;
 import java.util.Random;
-/*对象数组练习
+/*
+只有 Integer 和 Character 需要特殊记忆，其他基本类型只是首字母大写即可
+byte=Byte; short=Short; int=Integer; long=Long; float=Float; double=Double;
+char=Character; boolean=Boolean;
 */
 public class Class_Demo4_Arraylist {
     public static void main(String[] args) {
-        /*生成一定范围内的随机整数，并添加到集合当中*/
+        ArrayList<Integer> list_inter = new ArrayList<>();
         Random rd = new Random();
-        ArrayList<Integer> int_list = new ArrayList<>();
-        for (int i=0; i< 6; i++){
-            int r = rd.nextInt(100)+1;
-            int_list.add(r);
+        for (int i = 0; i < 5; i++) {
+            int number = rd.nextInt(10);
+            list_inter.add(number);
         }
-        System.out.println("生成一定范围内的随机整数："+int_list);
+        System.out.println("随机生成的数组："+list_inter);
 
-        ArrayList<String> student_lsit = new ArrayList<>();
     }
 }

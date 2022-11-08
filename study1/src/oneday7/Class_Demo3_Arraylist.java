@@ -14,7 +14,7 @@ public class Class_Demo3_Arraylist {
         String s1 = "你好";
         String s2 = "我好";
         String s3 = "大家好";
-        System.out.println(list);   //空值
+        System.out.println("无值："+list);   //空值
 
         /*将数组对象添加到元素集合当中*/
         list.add(s1);
