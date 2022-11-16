@@ -33,3 +33,13 @@ public 类名称（参数类型 参数名称）{
     1.所有的成员变量都要使用private关键字修饰
     2.每一个成员变量编写一对儿getter、setter方法
     3.编写一个无参数以及有参数的构造方法；
+
+6.ArrayList()类的使用情况
+    基本格式：ArrayList<String> list = new ArrayList<String>();
+    新版本格式：ArrayList<String> list = new ArrayList<>();
+
+    对于元素的操作,基本体现在——增、删、查。常用的方法有：
+    public boolean add(E e) ：将指定的元素添加到此集合的尾部。
+    public E remove(int index) ：移除此集合中指定位置上的元素。返回被删除的元素。
+    public E get(int index) ：返回此集合中指定位置上的元素。返回获取的元素。
+    public int size() ：返回此集合中的元素数。遍历集合时，可以控制索引范围，防止越界。

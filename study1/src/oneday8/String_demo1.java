@@ -5,8 +5,10 @@ package oneday8;
 * 特点：1.字符串的值在创建后不能被修改*/
 public class String_demo1 {
     public static void main(String[] args) {
+
+        // 直接创建字符串
         String s1 = "abc";
-        System.out.println(s1);
+        System.out.println("直接创建字符串:"+s1);
         s1 += "d";
         System.out.println(s1);
         // 内存中有"abc"，"abcd"两个对象，s1从指向"abc"，改变指向，指向了"abcd"。
@@ -15,21 +17,23 @@ public class String_demo1 {
         /*字符串对象不可变，所以字符串可以被共享*/
         String s2 = "abc";
         System.out.println(s2);
+
         // 内存中只有一个"abc"对象被创建，同时被s1 and s2 share
 
         /*字符串的构造方法*/
         // 无参构造
-        // String str = new String();
+         String str = new String();
+        System.out.println("第一个字符串："+str);
 
         // 通过字符串数组构造
-//        char chars[] = {'a', 'b','c'};
-//        String str2 = new String(chars);
-//        System.out.println(str2);
+        char chars[] = {'a', 'b','c'};
+        String str2 = new String(chars);
+        System.out.println("第二个字符串："+str2);
 
         // 通过字节数组构造
-        byte bytes[] ={97,98,99};
-        String str3 = new String(bytes);
-        System.out.println("字节数组构造"+str3);
+        byte[] byteArray = {97,98,99,100};
+        String str3 = new String(byteArray);
+        System.out.println("字节数组构造:"+str3);
 
     }
 

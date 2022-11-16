@@ -1,4 +1,7 @@
 package oneday7;
+
+import oneday6.Student;
+
 import java.util.ArrayList;
 import java.util.Random;
 /*
@@ -8,6 +11,8 @@ char=Character; boolean=Boolean;
 */
 public class Class_Demo4_Arraylist {
     public static void main(String[] args) {
+
+        // 创建保存随机数的数组对象
         ArrayList<Integer> list_inter = new ArrayList<>();
         Random rd = new Random();
         for (int i = 0; i < 5; i++) {
@@ -15,6 +20,7 @@ public class Class_Demo4_Arraylist {
             list_inter.add(number);
         }
         System.out.println("随机生成的数组："+list_inter);
+
 
     }
 }
