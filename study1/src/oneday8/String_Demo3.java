@@ -14,7 +14,9 @@ public class String_Demo3 {
         int numbercout = 0;
 
         for (int x=0; x <s.length(); x++){
-            // 索引赋值操作
+
+            // 索引赋值操作,遍历字符串，得到每一个字符；
+            // char charAt(int index):获取指定索引处的字符
             char ch = s.charAt(x);
             if (ch>='A'&&ch<='Z'){
                 bigcount++;
@@ -25,9 +27,11 @@ public class String_Demo3 {
             }else{
                 System.out.println("非法字符"+ch);
             }
-//            System.out.println("大写字符"+bigcount);
-//            System.out.println("小写字符"+samllcount);
-            System.out.println("数字字符"+numbercout);
+
         }
+
+        System.out.println("大写字符"+bigcount);
+        System.out.println("小写字符"+samllcount);
+        System.out.println("数字字符"+numbercout);
     }
 }
