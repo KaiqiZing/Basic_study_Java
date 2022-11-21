@@ -1,0 +1,22 @@
+1.继承格式：
+class 父类 {
+    ...
+ }
+ class 子类 extends 父类 {
+    ...
+ }
+
+
+ 2.重写
+    1.必须保证父类子类之间的方法的名称相同。参数列表也相同；
+    @override:写在方法前面，用来检车是不是有效的正确覆盖重写；也可以不写
+
+    2.子类方法的返回值必须 小于等于父类方法的返回值范围
+    注意：java.lang.Object类是所以公共最高父类， java.lang.String就是object的子类
+
+    3.子类方法的权限必须 大于等于父类方法的权限修饰符
+    注： public > protected >default > private, default不是关键字，而是什么都不写，留空；
+
+
+
+
