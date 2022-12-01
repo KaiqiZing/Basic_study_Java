@@ -1,0 +1,42 @@
+1.集合工具类
+    1.1常见操作方法；
+    - `public static <T> boolean addAll(Collection<T> c, T... elements)  `:往集合中添加一些元素。
+    - `public static void shuffle(List<?> list) 打乱顺序`:打乱集合顺序。
+    - `public static <T> void sort(List<T> list)`:将集合中元素按照默认规则排序。
+    - `public static <T> void sort(List<T> list，Comparator<? super T> )`:将集合中元素按照指定规则排序。
+
+    1.2 Comparable是collection.sort()默认排序方式，强行对实现它的每个类的对象进行整体的排序过程；
+    1.3 Comparator是强行对某个对象进行整体排序，允许在排序顺序上实现精确的升序或者降序操作；
+        语法：public static <T> void sort(List<T> list，Comparator<? super T> )
+2.Map
+    2.1定义：键值对形式属于双列集合，其中键是唯一的，值不唯一且每个键只能对应一个值；
+    2.2常用子类：
+        HashMap:存储数据采用的哈希表结构，元素的存取顺序不能保证一致。由于要保证键的唯一、不重复，需 要重写键的hashCode()方法、equals()方法。
+            底层：哈希表（查询速度特别快），数组+单向链表/红黑树（链表长度超多8），属于无序集合，存储元素和取出元素顺序可能不一致
+        LinkedHashMap:HashMap下有个子类LinkedHashMap，存储数据采用的哈希表结构+链表结构。通过链 表结构可以保证元素的存取顺序一致;
+        通过哈希表结构可以保证的键的唯一、不重复，需要重写键的 hashCode()方法、equals()方法。
+            底层：哈希表+链表（保证迭代顺序），有序集合，存储和取出元素顺序一致；
+
+
+    2.3 Hashtable and HashMap
+        Hashtable 底层是一个哈希表，是一个线程安全的集合，属于单线程，速度慢；
+        HashMap 底层是一个哈希表，是一个线程不安全的集合，属于多线程，速度快；
+
+        HashMap集合可以存储null键值对，而Hashtable不能存储null键值对；
+
+
+    2.4 常用方法：
+        public V put(K key, V value) : 把指定的键与指定的值添加到Map集合中。
+        public V remove(Object key) : 把指定的键 所对应的键值对元素 在Map集合中删除，返回被删除元素的
+        值。
+        public V get(Object key) 根据指定的键，在Map集合中获取对应的值。
+        public Set<K> keySet() : 获取Map集合中所有的键，存储到Set集合中。
+        public Set<Map.Entry<K,V>> entrySet() : 获取到Map集合中所有的键值对对象的集合(Set集合)。
+
+
+
+
+
+
+
+
