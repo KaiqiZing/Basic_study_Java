@@ -1,7 +1,38 @@
 1.Throwable体系：
-Error:严重错误Error，无法通过处理的错误，只能事先避免，好比绝症。
- Exception:表示异常，异常产生后程序员可以通过代码的方式纠正，使程序继续运行，是必须要处理的。好 比感冒、阑尾炎。
- Throwable中的常用方法：
- public void printStackTrace() :打印异常的详细信息。 包含了异常的类型,异常的原因,还包括异常出现的位置,在开发和调试阶段,都得使用printStackTrace。
- public String getMessage() :获取发生异常的原因。 提示给用户的时候,就提示错误原因。
- public String toString() :获取异常的类型和异常描述信息(不用)。
+     1.1 Error:严重错误Error，无法通过处理的错误，只能事先避免，好比绝症。
+     1.2 Exception:表示异常，异常产生后程序员可以通过代码的方式纠正，使程序继续运行，是必须要处理的。好 比感冒、阑尾炎。
+     1.3 Throwable中的常用方法：
+         public void printStackTrace() :打印异常的详细信息。 包含了异常的类型,异常的原因,还包括异常出现的位置,在开发和调试阶段,都得使用printStackTrace。
+         public String getMessage() :获取发生异常的原因。 提示给用户的时候,就提示错误原因。
+         public String toString() :获取异常的类型和异常描述信息(不用)。
+
+     1.4 异常分类
+        编译时期异常 checked异常，在编译时期，如果没有处理异常则编译失败
+        运行时期异常 runtime异常，在运行时期，检查异常；
+
+
+2.异常处理
+    异常处理常见的关键字 try， catch， finally， throw， throws
+    2.1 throw:
+        用在方法内，用来抛出一个异常对象，将这个异常对象传递到调用者处，并结束当前方法的执行。
+        格式：throw new 异常类名(参数);
+    2.2 Object非空判断
+        public static <T> T requireNonNull(T obj) :查看指定引用对象不是null。
+    2.3 声明异常throws
+        关键字throws运用于方法声明之上,用于表示当前方法不处理异常,而是提醒该方法的调用者来处理异常(抛出异常)
+
+    2.4 捕获异常try…catch
+        如果异常出现的话,会立刻终止程序,所以我们得处理异常:
+        1. 该方法不处理,而是声明抛出,由该方法的调用者来处理(throws)。
+        2. 在方法中使用try-catch的语句块来处理异常
+
+
+ 3.finally：
+    2.1异常代码发生时程序会停止操作，为了避免部分语句执行不到使用finally，在其内部的代码块都是必须要执行到的；主要是为了释放资源；
+    2.2 如果finally有return语句,永远返回finally中的结果,避免该情况.
+
+
+4.自定义异常：
+    异常类如何定义: 一般来说参考源代码的异常处理写法，自己定义符合业务场景的异常情况，非调用jdk内部异常方法；
+    1. 自定义一个编译期异常: 自定义类 并继承于 java.lang.Exception 。
+    2. 自定义一个运行时期的异常类:自定义类 并继承于 java.lang.RuntimeException 。

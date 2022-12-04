@@ -1,6 +1,4 @@
 package oneday17;
-
-
 /*
     try...catch:异常处理的第二种方式,自己处理异常
     格式:
@@ -21,8 +19,6 @@ package oneday17;
  */
 
 import java.io.IOException;
-
-
 public class Demo1TryCatch {
 
     public static void main(String[] args) {
