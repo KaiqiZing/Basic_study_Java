@@ -8,6 +8,7 @@ public class Array_Demo3 {
 
 
         // 调用方法接收数组的返回值，接收到的是数据组内存地址；
+        System.out.println("数组的内存地址："+ getarray());
         int[] arr2 = getarray();
         for (int i = 0; i < arr2.length; i++) {
             System.out.println("数组的返回值："+arr2[i]);
@@ -22,6 +23,7 @@ public class Array_Demo3 {
         for (int i = 0; i < arr1.length; i++) {
             System.out.println("数组作为方法参数："+arr1[i]);
         }
+        System.out.println("数组内存地址的值："+ arr1);
     }
 
     public static int[] getarray(){
