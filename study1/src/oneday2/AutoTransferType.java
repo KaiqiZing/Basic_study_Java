@@ -15,7 +15,7 @@ public class AutoTransferType {
         int i = 1;
         byte b = 2;
         int j = i + b;
-        System.out.println("int, byte转换为int类型："+j);
+        System.out.println("byte转换为int类型："+j);
 
         double d = 2.5;
         double e = d +i;
