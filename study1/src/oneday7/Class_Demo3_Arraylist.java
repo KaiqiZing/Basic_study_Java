@@ -1,11 +1,17 @@
 package oneday7;
 import java.util.ArrayList;
 /*
-对象数组：
-import java.util.ArrayList;--是大小可变的数组实现，存储在内的数据成为元素，此类提供一些方法来操作内部存储元素，其中可以不断添加元素，其大小也是自动增长；
-存储基本数据类型：
-ArrayList对象不能存储基本数据类型，只能存储对应的包装类型，其中Integer 和 Character需要特殊记忆，其他基本类型首字母大写即可
-*/
+数组的长度不可以发生改变。
+但是ArrayList集合的长度是可以随意变化的。
+
+对于ArrayList来说，有一个尖括号<E>代表泛型。
+泛型：也就是装在集合当中的所有元素，全都是统一的什么类型。
+注意：泛型只能是引用类型，不能是基本类型。
+
+注意事项：
+对于ArrayList集合来说，直接打印得到的不是地址值，而是内容。
+如果内容是空，得到的是空的中括号：[]
+ */
 public class Class_Demo3_Arraylist {
     public static void main(String[] args) {
         /*创建数组*/

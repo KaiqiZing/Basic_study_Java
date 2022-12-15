@@ -28,7 +28,10 @@ public class Class_Demo2 {
     private int age;
 
     /*构造方法*/
-    public Class_Demo2(){}
+    public Class_Demo2(){
+
+    }
+
     public Class_Demo2(String name, int age){
         this.name = name;
         this.age = age;
