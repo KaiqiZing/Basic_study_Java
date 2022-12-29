@@ -20,9 +20,8 @@ public class Class_Demo1 {
     }
 
     public static void main(String[] args) {
-/*
-        创建一个对象
-*/
+        /*
+        创建一个对象*/
         Class_Demo1 classDemo1 = new Class_Demo1("tommy");
         /*通过方法来设定age*/
         classDemo1.setAge(2);
