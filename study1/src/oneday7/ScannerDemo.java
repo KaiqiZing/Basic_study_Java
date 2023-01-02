@@ -1,7 +1,11 @@
 package oneday7;
 
 import java.util.Scanner;
-
+/*
+*
+获取键盘输入的一个int数字：int num = sc.nextInt();
+获取键盘输入的一个字符串：String str = sc.next();
+* */
 public class ScannerDemo {
     public static void main(String[] args) {
         // 创建键盘录入对象
@@ -23,6 +27,10 @@ public class ScannerDemo {
         int temp = (a > c ? a : c);
         int max = (temp > i ? temp:i);
         System.out.println("最大值是："+ max);
+
+
+        String strtest = sc.next();
+        System.out.println("输入的字符串是："+ strtest);
 
     }
 }
