@@ -1,4 +1,4 @@
-package oneday7;
+package oneday7.Demo4;
 import java.util.ArrayList;
 /*
 数组的长度不可以发生改变。

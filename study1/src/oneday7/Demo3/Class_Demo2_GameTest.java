@@ -1,4 +1,4 @@
-package oneday7;
+package oneday7.Demo3;
 import java.util.Random;
 import java.util.Scanner;
 

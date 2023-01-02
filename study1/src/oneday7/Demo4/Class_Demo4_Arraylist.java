@@ -1,4 +1,4 @@
-package oneday7;
+package oneday7.Demo4;
 
 import oneday6.Student;
 
