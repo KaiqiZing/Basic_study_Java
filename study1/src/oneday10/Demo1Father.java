@@ -1,6 +1,8 @@
 package oneday10;
 
 public interface Demo1Father {
+
+
     public abstract void eat();
     public abstract void sleep();
 

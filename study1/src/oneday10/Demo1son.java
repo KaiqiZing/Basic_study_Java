@@ -15,10 +15,13 @@ public class Demo1son implements Demo1Father{
 
     }
 
-    @Override
+/*    @Override
     public void default_method(){
         System.out.println("重写父类默认方法");
+    }*/
+
+    public static void main(String[] args) {
+        Demo1son son1 = new Demo1son();
+        son1.sleep();
     }
-
-
 }
