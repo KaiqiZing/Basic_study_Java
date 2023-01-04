@@ -6,10 +6,11 @@ package oneday9.demo5;
 * 3.在本来都构造方法中，访问本类的另一个构造方法
 * */
 public class Demo1Son extends Demo1Father {
+
     int num = 200;
     public Demo1Son(){
 
-        this(123);  // 本类中无参构造调用本类中有参构造；
+     this(1);
     }
 
     public Demo1Son(int n ){
