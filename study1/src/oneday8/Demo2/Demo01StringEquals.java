@@ -22,13 +22,13 @@ public class Demo01StringEquals {
         char[] charArray = {'H', 'e', 'l', 'l', 'o'};
         String str3 = new String(charArray);
 
-        System.out.println("比较"+str1.equals(str2));
-        System.out.println(str2.equals(str3));
-        System.out.println(str3.equals("Hello"));
+        System.out.println("str1 比较str2:"+str1.equals(str2));
+        System.out.println("str2 比较str3:"+str2.equals(str3));
+        System.out.println("str3 比较Hello:"+str3.equals("Hello"));
 
 
         String str4 = "hello";
-        System.out.println(str1.equals(str4)); // false
+        System.out.println("str1 比较str4:"+str1.equals(str4)); //
         System.out.println("=================");
 
 
