@@ -1,4 +1,4 @@
-package oneday14;
+package oneday14.Demo1_Collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
