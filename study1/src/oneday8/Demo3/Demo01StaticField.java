@@ -4,7 +4,7 @@ package oneday8.Demo3;
 * */
 public class Demo01StaticField {
     public static void main(String[] args) {
-        Student one = new Student("你好", 14  );
+        Student one = new Student("你好", 14 );
         Student two = new Student("世界", 18);
         System.out.println(one.getName()+ one.getAge()+one.getId());
         System.out.println(two.getName()+ two.getAge()+two.getId());
