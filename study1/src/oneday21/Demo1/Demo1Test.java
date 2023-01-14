@@ -1,6 +1,6 @@
 package oneday21.Demo1;
 
-public class Demo {
+public class Demo1Test {
     public static void show(MyFunctionalInterface myInter){
         myInter.method();
     }

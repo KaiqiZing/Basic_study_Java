@@ -17,7 +17,6 @@ package oneday15.Demo3;
     /*public static void method(String b,double c,int d,int...a){
     }*/
 
-import javafx.beans.binding.ObjectExpression;
 
 public class Demo1ChangeArgs {
     public static void main(String[] args) {
