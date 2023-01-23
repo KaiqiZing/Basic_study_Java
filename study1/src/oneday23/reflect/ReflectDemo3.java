@@ -37,39 +37,23 @@ public class ReflectDemo3 {
 
     public static void main(String[] args) throws Exception {
 
-        //0.获取Person的Class对象
-        Class personClass = Person.class;
-        /*
-            2. 获取构造方法们
-                 * Constructor<?>[] getConstructors()
-                 * Constructor<T> getConstructor(类<?>... parameterTypes)
+        Class personclass = Person.class;
+        Constructor constructor = personclass.getConstructor(String.class, int.class);
+        Object person = constructor.newInstance("张珊", 22);
+        System.out.println("获取到构造方法:"+ person);
+        System.out.println("=============================");
 
-                 * Constructor<T> getDeclaredConstructor(类<?>... parameterTypes)
-                 * Constructor<?>[] getDeclaredConstructors()
-         */
+        Constructor[] constructors1 = personclass.getConstructors();
+        for (Constructor constructor2 : constructors1) {
+            System.out.println(constructor2);
+        }
 
-
-        //Constructor<T> getConstructor(类<?>... parameterTypes)
-        Constructor constructor = personClass.getConstructor(String.class, int.class);
-        System.out.println(constructor);
-        //创建对象
-        Object person = constructor.newInstance("张三", 23);
-        System.out.println(person);
-
-        System.out.println("----------");
-
-
-        Constructor constructor1 = personClass.getConstructor();
-        System.out.println(constructor1);
-        //创建对象
-        Object person1 = constructor1.newInstance();
+        Constructor constructor2 = personclass.getConstructor();
+        Object person1 = constructor2.newInstance();
         System.out.println(person1);
+        Object test = personclass.newInstance();
+        System.out.println(test);
 
-        Object o = personClass.newInstance();
-        System.out.println(o);
-
-
-        //constructor1.setAccessible(true);
     }
 
 

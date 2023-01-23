@@ -36,42 +36,25 @@ public class ReflectDemo4 {
      */
 
     public static void main(String[] args) throws Exception {
+        Class personclass = Person.class;
+        Method getmethod = personclass.getMethod("eat");
+        Person p1 = new Person();
+        getmethod.invoke(p1);
 
-        //0.获取Person的Class对象
-        Class personClass = Person.class;
-        /*
-          3. 获取成员方法们：
-             * Method[] getMethods()
-             * Method getMethod(String name, 类<?>... parameterTypes)
+        Method getmethod2 = personclass.getMethod("eat", String.class);
+        getmethod2.invoke(p1, "测试卷");
 
-             * Method[] getDeclaredMethods()
-             * Method getDeclaredMethod(String name, 类<?>... parameterTypes)
-         */
-        //获取指定名称的方法
-        Method eat_method = personClass.getMethod("eat");
-        Person p = new Person();
-        //执行方法
-        eat_method.invoke(p);
-
-
-        Method eat_method2 = personClass.getMethod("eat", String.class);
-        //执行方法
-        eat_method2.invoke(p,"饭");
-
-        System.out.println("-----------------");
-
-        //获取所有public修饰的方法
-        Method[] methods = personClass.getMethods();
+        System.out.println("+++++++++++++");
+        // 获取所有的公共方法；
+        Method[] methods = personclass.getMethods();
         for (Method method : methods) {
-            System.out.println(method);
+//            System.out.println("获取到公共方法："+method);
             String name = method.getName();
             System.out.println(name);
-            //method.setAccessible(true);
         }
 
-        //获取类名
-        String className = personClass.getName();
-        System.out.println(className);//cn.itcast.domain.Person
+        String classname = personclass.getName();
+        System.out.println("获取到类名："+ classname);
 
     }
 

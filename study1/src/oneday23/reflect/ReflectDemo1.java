@@ -15,16 +15,18 @@ public class ReflectDemo1 {
 
     public static void main(String[] args) throws ClassNotFoundException {
         Class cls1 = Class.forName("oneday23.domain.Person");
-        System.out.println(cls1);
+        System.out.println("获取类名1："+cls1); // 目的：获取到class对象，共计三种方式：
 
-        // 类名.class
+
+        // 通过类名的属性class获取class对象；类名.class
         Class cls2 = Person.class;
-        System.out.println(cls2);
+        System.out.println("获取类名2："+cls2);
 
         // 对象名
         Person p1 = new Person();
+
         Class cls3 = p1.getClass();
-        System.out.println(cls3);
+        System.out.println("获取类名3："+cls3);
 
         System.out.println(cls1==cls2);
         System.out.println(cls1==cls3);

@@ -37,20 +37,20 @@ public class ReflectDemo2 {
         Class personClass = Person.class;
         Field[] fields = personClass.getFields();
         for (Field field : fields) {
-            System.out.println(field);
+            System.out.println("获取公有成员变量，私有和静态无效：" + field);
         }
-        System.out.println("==========");
+        System.out.println("==============================================");
         Field a = personClass.getField("a");
         // 获取到成员变量a的值，因为a.get()内部需要传入对象；所以需要创建Person对象p1并返回Object
 
         Person p1 = new Person();
         Object value = a.get(p1);
-        System.out.println(value);
+        System.out.println("输出获取的Person成员变量的值："+ value);
 
         // 设置value
         a.set(p1, "张珊珊");
-        System.out.println(p1);
-        System.out.println("=========");
+        System.out.println("输出设置的成员变量的值："+  p1);
+        System.out.println("=============================================");
         Field[] declaredFileds = personClass.getDeclaredFields();// 获取所有成员变量，不考虑修饰符；
         for (Field declaredFiled : declaredFileds) {
             System.out.println("获取所有成员变量："+ declaredFiled);
@@ -61,5 +61,13 @@ public class ReflectDemo2 {
         d.setAccessible(true);
         Object value2 = d.get(p1);
         System.out.println(value2);
+        d.set(p1, "111");
+        System.out.println(p1);
+
+        Field name = personClass.getDeclaredField("name");
+        name.setAccessible(true);
+        name.set(p1, "name");
+        System.out.println(p1);
     }
+
 }

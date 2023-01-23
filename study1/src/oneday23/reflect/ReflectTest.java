@@ -31,6 +31,7 @@ public class ReflectTest {
 
         // 获取配置文件定义的数据
         String className = pro.getProperty("className");
+        System.out.println(className);
         String methodName = pro.getProperty("methodName");
 
         // 加载类到内存中；
