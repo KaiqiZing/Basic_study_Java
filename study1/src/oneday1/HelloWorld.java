@@ -5,7 +5,13 @@ package oneday1;
 //单行注释
 /*多行注释*/
 public class HelloWorld {
+
+
     public static void main(String[] args) {
+
+        double x =4;
+        double y = Math.sqrt(x);
+        System.out.println(y);
         System.out.println("Hello World!!!");
     }
 }
